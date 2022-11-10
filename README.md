@@ -72,7 +72,6 @@ time.sleep(7)
 
 #Открыть и заполнить паспорт
 
-
 driver.find_element(By.CSS_SELECTOR, ".form:nth-child(2) .document-tile:nth-child(1) > .document-name") .click()
 time.sleep(1)
 driver.find_element(By.ID, "surname").clear()
@@ -111,8 +110,6 @@ driver.find_element(By.ID, "phone").clear()
 time.sleep(1)
 driver.find_element(By.ID, "phone").send_keys("8005353535")
 
-
-
 #Датапикер Рождение
 
 driver.find_element(By.CSS_SELECTOR, "div#birthday  input[name='date']").click()
@@ -139,8 +136,6 @@ time.sleep(1)
 driver.find_element(By.CSS_SELECTOR, "td[title='2014-07-09'] > div").click()
 time.sleep(1)
 
-
-
 #Адрес
 
 time.sleep(1)
@@ -156,6 +151,7 @@ driver.find_element(By.CSS_SELECTOR, ".vue-dadata__input").send_keys(Keys.ENTER)
 time.sleep(3)
 
 # Добавить документы
+
 driver.execute_script("window.scrollTo(0, 1300)")
 time.sleep(1)
 driver.find_element(By.CSS_SELECTOR, ".upload-widget img[alt='X']").click()
@@ -165,7 +161,6 @@ driver.find_element(By.CSS_SELECTOR, ".btn.fill").click()
 time.sleep(3)
 
 #Прикрепить диплом
-
 
 driver.find_element(By.CSS_SELECTOR, "div:nth-of-type(2) > .body.documents-tiles > div:nth-of-type(2) > .document-status").click()
 time.sleep(3)
@@ -257,6 +252,7 @@ driver.get('https://qa.neapro.site')
 time.sleep(5)
 
 #Открыть боковое меню
+
 driver.find_element(By.CSS_SELECTOR, ".avatar.icon > img[alt='avatar']").click()
 time.sleep(3)
 
@@ -290,6 +286,7 @@ driver.find_element(By.CSS_SELECTOR, "input#oldPassword").clear()
 time.sleep(1)
 
 #Выйти из профиля
+
 driver.find_element(By.CSS_SELECTOR, ".avatar.icon > img[alt='avatar']").click()
 time.sleep(1)
 driver.find_element(By.CSS_SELECTOR, ".logout_name").click()
